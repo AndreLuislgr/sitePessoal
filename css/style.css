@@ -13,6 +13,19 @@ body{
   @media (min-width:400px) {
     body{
     font-size: 16px;
+    } 
+  }
+  @media (min-width:560px) {
+    .portfolio .grid{
+      grid-template-columns: 240px 240px;
+    }
+  }
+  @media (min-width:880px) {
+    .portfolio .grid{
+      grid-template-columns: repeat(3,260px);
+      align-content:center;
+      justify-content: center;
+      height: 100vh;
     }
   }
   header{
@@ -26,6 +39,7 @@ body{
     position: fixed;
     width: 100vw;
     top: 0;
+    z-index: 1;
   } 
   .menu ul {
     display:flex;
@@ -36,6 +50,15 @@ body{
     color:#2C4251;
     display: block;
     padding: 10px 20px;
+   transition: background-color , color, 0.5s;
+  }
+  .menu a:active,
+  .menu a:hover{
+    background-color: #47677c;
+  }
+  a{
+    text-decoration: none;
+    color:#C1C1C1 ;
   }
   a:hover{
     text-decoration:underline;
@@ -59,13 +82,50 @@ body{
   .img-portfolio{
     height: 180px;
     width: 180px;
+    object-fit: cover;
+    transition: transform 500ms;
   }
+  .img-portfolio:active,
+  .img-portfolio:hover{
+    transform: scale(1.2);
+    
+
+  }
+  .contato,
   .portfolio{
     padding: 2em;
+    min-height: 100vh;
+    font-family: 'Hind Siliguri', sans-serif;
   }
+  .contato,
   .portfolio h2{
     font-size: 1.5em;
     color:#2C4251;
     font-weight:bold;
     text-transform: uppercase;
+    text-align: center;
+    
+  }
+  .portfolio figcaption{
+    font-weight:bold;
+    text-transform: uppercase;
+    
+  }
+  .portfolio .grid{
+    display: grid;
+    gap :2em;
+   
+  }
+  .contato a {
+    color:#D16666 ;
+    font-size: 3em;
+    text-decoration:none;
+    transition: text-shadow,1s;
+  }
+  .contato .icons{
+    text-align: center;
+  }
+  .contato a:active,
+  .contato a:hover{
+    text-shadow: 0px 0px 10px #2C4251;
   }
