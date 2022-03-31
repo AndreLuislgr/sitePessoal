@@ -91,20 +91,54 @@ body{
     
 
   }
+  .sobre,
   .contato,
   .portfolio{
     padding: 2em;
     min-height: 100vh;
     font-family: 'Hind Siliguri', sans-serif;
+    margin-left: auto ;
+    margin-right: auto;
   }
-  .contato,
+  @media(min-width : 1200px){
+    .container{
+      max-width: 1200px;
+      margin-left: auto ;
+      margin-right: auto;
+    }
+  }
+  .sobre h2,
+  .contato h2,
   .portfolio h2{
+    margin: 10px;
     font-size: 1.5em;
     color:#2C4251;
     font-weight:bold;
     text-transform: uppercase;
     text-align: center;
     
+  }
+  .sobre p {
+    color: #2C4251;
+    text-indent: 1.4em;
+    text-align: justify;
+    margin-bottom: 1.4em;
+
+  }
+  .sobre a{
+    color: #D16666;
+    text-decoration:underline;
+    font-style: italic;
+  }
+  .sobre a:hover{
+    background-color: #b0b6b9;
+  }
+  .sobre .avatar{
+    float: right;
+    margin-left: 2em;
+  }
+  .sobre .avatar img{
+   
   }
   .portfolio figcaption{
     font-weight:bold;
@@ -114,8 +148,9 @@ body{
   .portfolio .grid{
     display: grid;
     gap :2em;
-   
+    
   }
+  
   .contato a {
     color:#D16666 ;
     font-size: 3em;
