@@ -165,3 +165,6 @@ body{
   .contato a:hover{
     text-shadow: 0px 0px 10px #2C4251;
   }
+  #fotoAndre{
+    weight : 25px;
+  }
