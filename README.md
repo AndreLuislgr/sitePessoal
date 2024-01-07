@@ -37,9 +37,6 @@ Este é um projeto simples de um site pessoal desenvolvido durante a [Imersão C
 - **css/img/:** Diretório contendo imagens utilizadas no site.
 - **css/img/icon.png:** Ícone do site exibido na barra de navegação.
 
-## Como Contribuir
-
-Se você encontrar problemas, melhorias ou tiver sugestões, sinta-se à vontade para abrir uma [issue](https://github.com/seu-usuario/seu-repositorio/issues) ou enviar um [pull request](https://github.com/seu-usuario/seu-repositorio/pulls). Sua contribuição é bem-vinda!
 
 ## Recursos Utilizados
 
